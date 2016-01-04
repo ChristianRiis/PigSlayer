@@ -4,7 +4,7 @@
 ### How to Play
 
 At the in-game prompt type '/js pigslayer(n)' to start playing. n is the
-number of pigs needed to win the round.
+number of pigs needed to kill to win the round.
 
 Kill pigs to score points.
 
