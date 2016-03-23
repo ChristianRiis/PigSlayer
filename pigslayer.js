@@ -4,7 +4,7 @@
 ### How to Play
 
 At the in-game prompt type '/js pigslayer(n)' to start playing. n is the
-number of pigs needed to win the round.
+number of pigs needed to kill to win the round.
 
 Kill pigs to score points.
 
@@ -35,7 +35,7 @@ Or, better yet, buy the book here:
 http://www.amazon.co.uk/Beginners-Writing-Minecraft-Plugins-JavaScript/
 
 Feel free to reach out on Twitter:
-@ChristianRiis
+https://twitter.com/ChristianRiis
 
 ***/
 
@@ -82,7 +82,7 @@ function playerJoins( event ) {
   echo(event.player, 'First player to reach ' + global_killsToEndGame + ' wins the round!');
   //scoreboard.updateScore('ThePigBoard', playerName, 1); // this function does not work in scoreboard.js
 }
-events.connection( playerJoins );
+events.playerJoin( playerJoins );
 
 function somethingKilled( event) {
   var killerName = 'A killer clown'; // need to handle 'undefined'. Bats are killed all the time ..!
